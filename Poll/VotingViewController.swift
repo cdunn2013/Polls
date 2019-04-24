@@ -28,6 +28,10 @@ class VotingViewController: UIViewController {
         
         VoteController?.castVote(with: name, response)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print("View did appear")
+    }
     /*
     // MARK: - Navigation
 
